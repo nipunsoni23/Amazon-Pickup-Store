@@ -1,0 +1,36 @@
+.container{
+  overflow:hidden;
+  font-family: 'Lato', sans-serif;
+  margin: 4% 10% ;
+  padding:10px;
+  text-align: center;
+  border: solid lightgrey 0.5px;
+  border-radius: 2px;
+}
+hr{
+  width: 70%;
+  align-content:center;
+  border: 1px solid grey; 
+}
+.ratings input{
+  display: none;
+}
+.ratings label::before
+{
+  content:'\f005';
+  font-family: fontAwesome;
+  font-size: 1.5em;
+  letter-spacing: 10px;
+  color: darkslategrey;
+  position: relative;
+}
+.ratings label::after
+{
+  content:'\f005';
+  font-family: fontAwesome;
+  font-size: 1.5em;
+  letter-spacing: 10px;
+  color: goldenrod;
+  position: absolute;
+  
+}
