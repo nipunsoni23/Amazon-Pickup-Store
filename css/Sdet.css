@@ -1,0 +1,37 @@
+body
+{
+  text-align: center;
+  
+}
+.search-id{
+   
+  /* margin: 3% auto; */
+  padding: 0.5% auto;
+  /* border: 5px solid red; */
+   font-size: 20px;
+   font-family: 'Lato', sans-serif;
+  }
+.search-box
+{
+  padding: 0.5%;
+  /* border: green solid 5px; */
+  align-content:center;
+}
+.box
+{padding: 10px;
+  font-size: 17px;
+  width: 60%;
+  background: black;
+  height:20px;
+  border-radius: 20px;
+  color:white;
+}
+.icon{
+  width: 30%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;}

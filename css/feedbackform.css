@@ -1,8 +1,11 @@
-*{border:1px solid black;}
-body{margin: 0; padding: 0;}
 
+body{margin: 0; padding: 0;}
+/* overall form area */
 .container{
   overflow:hidden;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   font-family: 'Lato', sans-serif;
   margin: 4% 10% ;
   padding:10px;
@@ -15,47 +18,42 @@ hr{
   align-content:center;
   border: 1px solid grey; 
 }
+/* amazon picture */
 #logo{  
   height: 5%; width: 5%;
-  padding:4px;}
-ol{
-  text-align: center;
-display: flex;
-flex-direction: column;}
-
-.ratings
-{position: relative;}
-
-.ratings input{
-  display: none;
-}
-.ratings label{
-  cursor: pointer;
-  display:inline-block;
-
-
-}
-.ratings label::before
-{
-  content:'\f005';
-  font-family: fontAwesome;
-  font-size: 1.9em;
-  letter-spacing: 15px;
-  color: darkslategrey;
-  align-content:center;
-  position: relative;
-
-}
-.ratings label::after
-{
-  content:'\f005';
-  font-family: fontAwesome;
-  font-size: 1.9em;
-  letter-spacing: 15px;
-  color: gold;
-  align-content:center;
-  position: relative;
-
+  padding:4px;
+  position: relative;}
+/* star-ratings-area */
+.ratings{
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  /* align-items: center; */
 }
 
-
+  /* star rating css */
+.rating-box
+{ 
+  direction:rtl;
+  display:flex;
+flex-direction: row;
+justify-content:center;}
+  .select
+  {
+     opacity:0; 
+  }
+  .star-dec{
+    cursor:pointer;
+    font-size: 30px;
+    padding:2%;
+   }
+   .star-dec:hover
+   {
+    color: #fad634;
+    transition: 0.5s;
+   }
+   .rating-box label:hover ~ label,.rating-box input:checked ~ label
+   {
+    color: #fad634;
+    transition: 0.5s;
+   }
