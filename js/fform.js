@@ -1,1 +1,4 @@
-function giverating(i) { console.log(i); }
+function giverating(i) {
+  console.log(i);
+
+}

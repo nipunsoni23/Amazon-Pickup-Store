@@ -50,10 +50,10 @@ justify-content:center;}
    .star-dec:hover
    {
     color: #fad634;
-    transition: 0.5s;
+    transition: 0.4s;
    }
    .rating-box label:hover ~ label,.rating-box input:checked ~ label
    {
     color: #fad634;
-    transition: 0.5s;
+    transition: 0.3s;
    }
