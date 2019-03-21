@@ -40,9 +40,15 @@ hr{
   flex-direction: row;
   justify-content:center;}
 
+  .rating-box-1 form,.rating-box-2 form,.rating-box-3 form
+  {
+    display:flex;
+  flex-direction: row;
+  justify-content:center;
+  }
   .select
   {
-     opacity:0; 
+      opacity:0;  
   }
   .star-dec{
     cursor:pointer;
@@ -70,7 +76,7 @@ hr{
     color: #fad634;
     transition: 0.3s;
    }
-.buttons
+.button
 {display: flex;
 flex-direction: row;
 justify-content: space-around;}
