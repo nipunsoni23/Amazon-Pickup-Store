@@ -1,5 +1,10 @@
 function giverating(j, i) {
-  console.log(i);
+  let ratings = [];
+
+  ratings[j - 1] = i;
+
+  console.log(ratings);
+  let objJSON = JSON.stringify(ratings);
   switch (i) {
     case 1:
       document.getElementById("rev" + j).innerHTML = "Very Poor";
